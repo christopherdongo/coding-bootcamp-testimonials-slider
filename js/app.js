@@ -17,7 +17,7 @@ const personData=[
 //constans
  const biography = document.querySelector('#texto')
  const name = document.querySelector('#name')
- const job = document.querySelector('#jobs')
+ const job = document.getElementById('jobs')
  const photo = document.querySelector('#photo_avatar')
  //buttons
  const nextBTN = document.querySelector('#button-next')
@@ -37,8 +37,8 @@ const personData=[
    //data
    photo.src = item.photo;
    biography.textContent=item.biography;
-   name.innerHTML = item.name;
-   job.innerHTML = item.job;
+   job.textContent = item.job;
+   name.textContent = item.name;
 
 
  }

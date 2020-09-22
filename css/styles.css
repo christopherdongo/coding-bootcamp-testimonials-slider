@@ -22,8 +22,8 @@
     flex: 1;
 }
 .svg-1 img{
-    padding-top: 9em;
-    padding-left: 13.5em;
+    padding-top: 8.5em;
+    padding-left: 12.4em;
     width: 15%;
     margin: auto;
 }
@@ -48,54 +48,49 @@
     flex: 1;
 }
 .biography{
-    max-width: 650px;
     position: absolute;
     margin: auto;
-    font-size: 1.9em;
-    padding-top: 6em;
     padding-left: 4em;
-    padding-right:0 ;
+    padding-top: 12em;
+}
+.biography div{
+    display: flex;
+    padding-top: 1em;
+    align-items: center;  
+}
+.texto{
+    width: 700px;
+    padding-right:0;
+    font-size: 2em;
     font-family: var(--font-family);
     color: var(--DarkBlue);
     font-weight: 300;
 }
-.biography h1{
- /*padding-top:2em ;*/
- font-size: 16px;
- font-weight: 700;
+.name{
+    color: var(--DarkBlue);
+    font-family: var(--font-family);
+    font-weight: 700;
+    display:  flex;
+    font-size: 19px;
 }
-/*
-.biography h1 span{
+.jobs{
     color: var(--GrayishBlue);
+    font-family: var(--font-family);
     font-weight: 500;
-}*/
-
+    font-size: 19px;
+    padding-left: 0.5em;
+}
 .avatar{
     margin: auto;
     margin-top:4em;
     margin-left: 4.1em;
     z-index: 999;
+    border-radius: 10px;
     max-width: 72%;
     max-height: 82%;
     box-shadow: 0px 10px 39px 0px rgba(0, 0, 0, 0.75);;
 }
-.name_jobs{
-  display: flex;
-  align-items: center;
-  padding-top: 1em;
-}
-.name_jobs h1{
-    color: var(--DarkBlue);
-    font-weight: 700;
-    display:  flex;
-    font-size: 18px;
-}
-.name_jobs p{
-   font-weight: 500;
-   color: var(--GrayishBlue);
-   font-size: 18px;
-   padding-left: 1em;
-}
+
 .container-button{
     display: flex;
     justify-content: space-around;
@@ -109,7 +104,8 @@
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     margin-left: 8em;
-    bottom: 1.5em;
+    bottom: 1.9em;
+    padding: 0.2em;
 }
 .prev:hover{
     cursor: pointer;
@@ -122,7 +118,7 @@
     position: sticky;
 }
 .svg-footer img{
-    width: 40%;
+    width: 50%;
     margin: auto;
     position: absolute;
     margin-top: 20em;
@@ -136,16 +132,16 @@
     }
     .svg-1 img{
         padding-top: 9em;
-        padding-left: 14em;
+        padding-left: 12.5em;
         width: 15%;
         margin: auto;
     }
     .biography{
         padding-right: 2em;
     }
-    .biography p{
+    .texto{
         position: relative;
-        width: 710px;
+        width: 700px;
         font-size: 32px;
         padding-left: 0em;
         padding-top: 0.5em;
@@ -154,12 +150,18 @@
         color: var(--DarkBlue);
         font-weight: 300;
     }
-      .biography p{
+    .biography div{
+        padding-top:1.8em;
+    }
+      .name{
          font-weight: 500;
-         color: var(--GrayishBlue);
-         font-size: 18px;
-         padding-left: 1em;
+         color: var(--DarkBlue);
+         font-size: 25px;
          margin: 0;
+      }
+      .jobs{
+          font-weight: 500;
+          color: var(--GrayishBlue);
       }
     .avatar{
         margin: auto;
@@ -170,99 +172,195 @@
     .svg-footer img{
         position: absolute;
         z-index: 1;
-        width: 50%;
+        width: 60%;
         padding-top: 3em;
     }
 }
+/*
+@media (min-width:801px) and (max-width:1130px){
 
-
-@media screen and (max-width:1199.98px){
-    .biography p{
-        width: 700px;
-        font-size: 32px;
+    .texto{
+        width: 350px;
+        font-size: 20px;
     }
-}
-
-
-@media (min-width: 1199px) and (max-width:1300px) {
-    .svg-1 img{
-        padding-top: 6.5em;
-        padding-left: 12em;
-        width: 15%;
-        margin: auto;
-    }
-    .biography{
-        padding-top:6em;
-    }
-    .biography p{
-        width: 600px;
-        margin: auto;
-        font-size:28px;
-    }
-    
-}
-
-@media (min-width:801px) and (max-width:1198px){
-    .biography{
-        padding-top: 4em;
-        padding-left: 2em;
-    }
-    .biography p{
-        margin: auto;
-        max-width: 300px;
-        font-size: 30px;
-    }
-    .svg-1 img{
-        padding-top: 5.5em;
-        padding-left: 6.5em;
-        width: 15%;
-        margin: auto;
-    }
-    .avatar{
-        max-width: 65%;
-    }
-    .svg-footer img{
-        position: absolute;
-        z-index: 1;
-        width: 70%;
-        margin-top: 150px;
-    }
-}
-
-@media screen and (max-width: 800.98px){
-    .biography{
-        padding-top: 4em;
-        padding-left: 2em;
-    }
-    .biography p{
-        max-width: 350px;
-        margin: auto;
+    .biography h1{
         font-size: 15px;
     }
-    .svg-1 img{
-        padding-top: 9em;
-        padding-left: 14em;
-        width: 15%;
-        margin: auto;
+
+}*/
+
+@media screen and (max-width: 800.98px){
+    .container{
+        display: flex;
+        flex-direction: column;
     }
-    .avatar{
-        max-width: 72%;
+    .main-1{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-2{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .biography{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4em;
+        padding-left: 0em;
+    }
+    .texto{
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+    }
+    /*name*/
+    .biography div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .name{
+      font-size: 25px;
+    }
+    .jobs{
+        padding-top: 0.5em;
+        font-size: 28px;
+
+    }
+    .svg-1{
+     display: grid;
+     place-items: center;
+    }
+    .svg-1 img{
+        padding-top: 3.5em;
+        padding-left: 0em;
+        width: 90%;
     }
     .svg-2 img{
-        max-width: 103%;
+        max-width: 92.5% !important;
+    }
+    .caja1{
+      display: flex;
+      padding-top: 11em;
+      align-items: center;
+      justify-content: center;
+    }
+    .container-photo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .avatar{
+        width:70%;
+        margin-top: 4em;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .svg-2{
+        display: flex;
+        justify-content: center;
+    }
+    .svg-2 img{
+        max-width: 54%;
         margin: auto;
     }
-
-    .svg-footer img{
-        position: absolute;
-        z-index: 1;
-        width: 80%;
-        padding-top: 3em;
+    .container-button{
+        display: flex;
+        margin: auto;
+        z-index: 999;
     }
-
+    .container-footer{
+        display:flex;
+        justify-content: end;
+        position: absolute;
+        width: 90%;
+        margin: auto;
+        z-index: 1;
+        padding-top:43em ;
+    }
+    .svg-footer img{
+        width: 80%;
+    }
 }
+
+@media screen and (max-width:550px){
+    .svg-1 img{
+        max-width: 50%;
+        margin: auto;
+        padding-bottom: 0.5em;
+    }
+    .biography{
+        padding-top: 0.1em;
+    }
+    .texto{
+        width: 100%;
+        font-size: 1.3em!important;
+        text-align: center;
+    }
+    .container-footer{
+        padding-top:30em;
+        margin: auto;
+    }
+    .container-button{
+        padding: 0.02em;
+    }
+}
+
 
 @media screen and (max-width:375px){
+    .biography{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4em;
+        padding-left: 0em;
+    }
+    .texto{
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .avatar{
+        margin-top:2em;
+        width: 100% !important;
+    }
 
+    .biography div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .name{
+      font-size: 25px;
+    }
+    .jobs{
+        padding-top: 0.5em;
+        font-size: 28px;
+    }
+    .svg-2 img{
+        max-width: 54%;
+        margin: auto;
+    }
+    .container-button{
+       padding:0.1em;
+    }
+    .container-footer{
+        margin-top:0em !important;
+        margin: auto;
+    }
+    .svg-footer img{
+        width: 70%;
+    }
 }
-
